@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2jASRV0rjEB8teRL/DIQsauEjjJLa9ZBNcWSKylZVopHmKx6M2ilo+D7jbQMjFqVvMIpPY2hPyUmyP5BXorpbg==",
+  "dgSpecHash": "QcNju9j64mPVW/I7eFAcqROiQEqd1lxLa/l1L5y70/ypWpFm9aqOtTeE++dD2IsaGZycTt2InZZhAz9JXbj1Sg==",
   "success": true,
-  "projectFilePath": "E:\\Clases 2020-2\\POO\\Parcial2\\linq.csproj",
+  "projectFilePath": "D:\\Universidad\\Semestre V\\Programacion Orientada a Objetos\\Parcial 2\\Parcial2-Santiago-Torres\\linq.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Leona\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\USUARIO\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

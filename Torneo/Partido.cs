@@ -27,12 +27,34 @@ namespace linq.Torneo
             List<string> jugadoresVacios = Enumerable.Repeat(string.Empty, 50).ToList();
             List<String> JugadoresLocales = EquipoLocal.Seleccion.Jugadores.Select(j => j.Nombre).ToList().Concat(jugadoresVacios).ToList();
             List<String> JugadoresVisitantes = EquipoVisitante.Seleccion.Jugadores.Select(j => j.Nombre).ToList().Concat(jugadoresVacios).ToList();
-            int position = random.Next(JugadoresLocales.Count);
-            String expulsadoLocal = JugadoresLocales[position];
-            position = random.Next(JugadoresVisitantes.Count);
-            String expulsadoVisitante = JugadoresVisitantes[position];
-            EquipoLocal.ExpulsarJugador(expulsadoLocal);
-            EquipoVisitante.ExpulsarJugador(expulsadoVisitante);
+
+            int cap = random.Next(1,5);
+            for(int i = 0; i < cap; i++){
+                int position = random.Next(JugadoresLocales.Count);
+                String expulsadoLocal = JugadoresLocales[position];
+                position = random.Next(JugadoresVisitantes.Count);
+                String expulsadoVisitante = JugadoresVisitantes[position];
+                EquipoLocal.ExpulsarJugador(expulsadoLocal);
+                EquipoVisitante.ExpulsarJugador(expulsadoVisitante);
+            }
+        }
+
+        private void CalcularAmonestados()
+        {
+            Random random = new Random();
+            List<string> jugadoresVacios = Enumerable.Repeat(string.Empty, 50).ToList();
+            List<String> JugadoresLocales = EquipoLocal.Seleccion.Jugadores.Select(j => j.Nombre).ToList().Concat(jugadoresVacios).ToList();
+            List<String> JugadoresVisitantes = EquipoVisitante.Seleccion.Jugadores.Select(j => j.Nombre).ToList().Concat(jugadoresVacios).ToList();
+
+            int cap = random.Next(0,8);
+            for(int i = 0; i < cap; i++){
+                int position = random.Next(JugadoresLocales.Count);
+                String amonestadoLocal = JugadoresLocales[position];
+                position = random.Next(JugadoresVisitantes.Count);
+                String amonestadoVisitante = JugadoresVisitantes[position];
+                EquipoLocal.AmonestarJugador(amonestadoLocal);
+                EquipoVisitante.AmonestarJugador(amonestadoVisitante);
+            }
         }
 
         private void CalcularResultado()
@@ -48,6 +70,7 @@ namespace linq.Torneo
             try
             {
                 CalcularExpulsiones();
+                CalcularAmonestados();
                 CalcularResultado();
                 resultado = EquipoLocal.Goles.ToString() + " - " + EquipoVisitante.Goles.ToString();
             }

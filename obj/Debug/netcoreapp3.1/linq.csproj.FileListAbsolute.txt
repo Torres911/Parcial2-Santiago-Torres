@@ -28,3 +28,18 @@ E:\Clases 2020-2\POO\Parcial2\obj\Debug\netcoreapp3.1\linq.csproj.CopyComplete
 E:\Clases 2020-2\POO\Parcial2\obj\Debug\netcoreapp3.1\linq.dll
 E:\Clases 2020-2\POO\Parcial2\obj\Debug\netcoreapp3.1\linq.pdb
 E:\Clases 2020-2\POO\Parcial2\obj\Debug\netcoreapp3.1\linq.genruntimeconfig.cache
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\obj\Debug\netcoreapp3.1\linq.csprojAssemblyReference.cache
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\obj\Debug\netcoreapp3.1\linq.AssemblyInfoInputs.cache
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\obj\Debug\netcoreapp3.1\linq.AssemblyInfo.cs
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\obj\Debug\netcoreapp3.1\linq.csproj.CoreCompileInputs.cache
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\obj\Debug\netcoreapp3.1\linq.dll
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\obj\Debug\netcoreapp3.1\linq.pdb
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\bin\Debug\netcoreapp3.1\linq.exe
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\bin\Debug\netcoreapp3.1\linq.deps.json
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\bin\Debug\netcoreapp3.1\linq.runtimeconfig.json
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\bin\Debug\netcoreapp3.1\linq.runtimeconfig.dev.json
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\bin\Debug\netcoreapp3.1\linq.dll
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\bin\Debug\netcoreapp3.1\linq.pdb
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\obj\Debug\netcoreapp3.1\linq.csproj.CopyComplete
+D:\Universidad\Semestre V\Programacion Orientada a Objetos\Parcial 2\Parcial2-Santiago-Torres\obj\Debug\netcoreapp3.1\linq.genruntimeconfig.cache

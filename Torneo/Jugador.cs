@@ -11,7 +11,7 @@ namespace linq.Torneo
         [JsonProperty("edad")]
         public int Edad { get; set; }
         
-        [JsonIgnore]
+        [JsonProperty("posicion")]
         public int Posicion { get; set; }
 
         [JsonProperty("ataque")]
@@ -26,6 +26,9 @@ namespace linq.Torneo
         [JsonProperty("asistencias")]
         public double Asistencias { get; set; }
 
+        [JsonProperty("amarillas")]
+        public double Amarillas { get; set; }
+
         #endregion Properties
 
         #region Initialize
@@ -38,6 +41,7 @@ namespace linq.Torneo
             this.Defensa = d;
             this.Goles = g;
             this.Asistencias = s;
+            this.Amarillas = 0;
         }
         #endregion Initialize
 

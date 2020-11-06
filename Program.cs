@@ -11,11 +11,11 @@ namespace linq
     {
         static void Main(string[] args)
         {
-            RepositorioDatos Datos = new RepositorioDatos();
-            List<Seleccion> Selecciones = Datos.Selecciones;
+            GestorArchivos ga = new GestorArchivos();
+            List<Seleccion> Selecciones = ga.CargarDeFREDDY();
             Seleccion Francia = Selecciones.First(s => s.Nombre == "Francia") as Seleccion;
-            Seleccion Argentina = Selecciones.FirstOrDefault(s => s.Nombre == "Argentina") as Seleccion;
-            Partido partido1 = new Partido(Francia, Argentina);
+            Seleccion USA = Selecciones.FirstOrDefault(s => s.Nombre == "USA") as Seleccion;
+            Partido partido1 = new Partido(Francia, USA);
             Console.WriteLine(partido1.Resultado());
 
 
