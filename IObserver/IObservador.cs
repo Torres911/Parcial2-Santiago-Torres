@@ -7,16 +7,16 @@ namespace linq.Torneo
     public interface IObservador 
     {
         #region Methods
-        public void update(Partido p);
+        public void LlenarEquipos(Partido p);
         #endregion Methods
     }
     
     public interface IListener 
     {
         #region Methods
-        public void registerObserver(Seleccion temp); 
-        public void unregisterObserver(Seleccion temp); 
-        public void notifyObservers(); 
+        public void Subscribe(Seleccion temp); 
+        public void Unsubscribe(Seleccion temp); 
+        public void Signal(); 
         #endregion Methods
     }
     

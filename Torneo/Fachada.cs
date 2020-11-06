@@ -42,17 +42,17 @@ namespace linq.Torneo{
                 Console.WriteLine("No existen esos equipos en la lista de selecciones");
             }
         }
-        public void registerObserver(Seleccion temp){ 
+        public void Subscribe(Seleccion temp){ 
             selecciones.Add(temp); 
         } 
       
-        public void unregisterObserver(Seleccion temp) { 
+        public void Unsubscribe(Seleccion temp){ 
             selecciones.Remove(temp); 
         }
 
-        public void notifyObservers() { 
-            foreach(var element in selecciones){
-                element.update( Partidos.LastOrDefault() );
+        public void Signal(){ 
+            foreach(Seleccion temp in selecciones){
+                temp.update(partido.LastOrDefault() );
             }
         }
     }

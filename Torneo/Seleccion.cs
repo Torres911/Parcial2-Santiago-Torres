@@ -28,7 +28,7 @@ namespace linq.Torneo
         #endregion Initialize
 
         #region Methods
-        public void update( Partido p){
+        public void LlenarEquipos(Partido p){
 
             if(p.EquipoLocal.Seleccion.Nombre == Nombre){
                 GolesTotales += p.EquipoLocal.Goles;

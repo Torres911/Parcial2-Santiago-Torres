@@ -114,8 +114,6 @@ namespace linq.Torneo
             return EquipoVisitante.Goles;
         }
 
-
-
         #endregion Methods
 
     }
