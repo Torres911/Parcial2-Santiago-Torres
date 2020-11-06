@@ -11,6 +11,7 @@ namespace linq
     {
         static void Main(string[] args)
         {
+            Fachada fachada = new Fachada();
             //GestorArchivos ga = new GestorArchivos();
             //List<Seleccion> Selecciones = ga.CargarDeFREDDY();
             //Seleccion Francia = Selecciones.First(s => s.Nombre == "Francia") as Seleccion;

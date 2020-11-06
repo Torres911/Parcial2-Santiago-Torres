@@ -10,6 +10,7 @@ namespace linq.Torneo
         #region Properties  
         public Equipo EquipoLocal { get; set; }
         public Equipo EquipoVisitante { get; set; }
+        public string EquipoGanador { get; set; }
 
         #endregion Properties
 
@@ -75,6 +76,14 @@ namespace linq.Torneo
                 resultado = EquipoLocal.Goles.ToString() + " - " + EquipoVisitante.Goles.ToString();
                 EquipoLocal.Asistencias = EquipoLocal.Goles;
                 EquipoVisitante.Asistencias = EquipoVisitante.Goles;
+                
+                if(EquipoLocal.Goles > EquipoVisitante.Goles){
+                    EquipoGanador = EquipoLocal.Seleccion.Nombre;
+                }else if(EquipoVisitante.Goles > EquipoLocal.Goles){
+                    EquipoGanador = EquipoVisitante.Seleccion.Nombre;
+                }else{
+                    EquipoGanador = "EMPATE";
+                }
             }
             catch(LoseForWException ex)
             {
@@ -104,6 +113,9 @@ namespace linq.Torneo
         public int GolesVisitante(){
             return EquipoVisitante.Goles;
         }
+
+
+
         #endregion Methods
 
     }

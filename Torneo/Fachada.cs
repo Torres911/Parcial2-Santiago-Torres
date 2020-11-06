@@ -8,10 +8,10 @@ using Newtonsoft.Json;
 
 namespace linq.Torneo{
     
-    public class Fachada{
+    public class Fachada : IListener{
 
-        private List<Seleccion> selecciones;
-        private Partido partido;
+        public List<Seleccion> selecciones;
+        public Partido partido;
 
         public void CargarDeFREDDY(){
             try{
@@ -31,14 +31,28 @@ namespace linq.Torneo{
                 Seleccion elocal = selecciones.First(s => s.Nombre == local) as Seleccion;
                 Seleccion evisitante = selecciones.First(s => s.Nombre == visitante) as Seleccion;
                 partido = new Partido(elocal, evisitante);
+                Console.WriteLine("El partido quedo: " + local +" "+ partido.Resultado() +" "+ visitante);
                 elocal.GolesTotales += partido.GolesLocal();
                 elocal.AsistenciasTotales += partido.GolesLocal();
                 evisitante.GolesTotales += partido.GolesVisitante();
                 evisitante.AsistenciasTotales += partido.GolesVisitante();
-                Console.WriteLine("El partido quedo: " + local +" "+ partido.Resultado() +" "+ visitante);
+                
             }
             catch (InvalidOperationException){
                 Console.WriteLine("No existen esos equipos en la lista de selecciones");
+            }
+        }
+        public void registerObserver(Seleccion temp){ 
+            selecciones.Add(temp); 
+        } 
+      
+        public void unregisterObserver(Seleccion temp) { 
+            selecciones.Remove(temp); 
+        }
+
+        public void notifyObservers() { 
+            foreach(var element in selecciones){
+                element.update( Partidos.LastOrDefault() );
             }
         }
     }

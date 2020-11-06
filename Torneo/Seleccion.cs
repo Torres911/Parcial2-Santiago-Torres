@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace linq.Torneo
 {
-    public class Seleccion
+    public class Seleccion : IObservador
     {
         #region Properties  
         [JsonProperty("nombre")]
@@ -26,6 +26,33 @@ namespace linq.Torneo
         #region Initialize
 
         #endregion Initialize
+
+        #region Methods
+        public void update( Partido p){
+
+            if(p.EquipoLocal.Seleccion.Nombre == Nombre){
+                GolesTotales += p.EquipoLocal.Goles;
+                AsistenciasTotales += p.EquipoLocal.Asistencias;
+                if(Nombre == p.EquipoGanador){
+                    PuntosTotales += 3;
+                }else if("EMPATE" == p.EquipoGanador){
+                    PuntosTotales += 1;
+                }
+
+            }else if(p.EquipoVisitante.Seleccion.Nombre == Nombre){
+
+                GolesTotales += p.EquipoVisitante.Goles;
+                AsistenciasTotales += p.EquipoVisitante.Asistencias;
+                if(Nombre == p.EquipoGanador){
+                    PuntosTotales += 3;
+                }else if("EMPATE" == p.EquipoGanador){
+                    PuntosTotales += 1;
+                }
+
+            }
+
+        }
+        #endregion Methods
 
     }
 }
