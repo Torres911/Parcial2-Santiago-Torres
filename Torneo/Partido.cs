@@ -73,6 +73,8 @@ namespace linq.Torneo
                 CalcularAmonestados();
                 CalcularResultado();
                 resultado = EquipoLocal.Goles.ToString() + " - " + EquipoVisitante.Goles.ToString();
+                EquipoLocal.Asistencias = EquipoLocal.Goles;
+                EquipoVisitante.Asistencias = EquipoVisitante.Goles;
             }
             catch(LoseForWException ex)
             {
@@ -82,16 +84,22 @@ namespace linq.Torneo
                 if (ex.NombreEquipo == EquipoLocal.Seleccion.Nombre)
                 {
                     EquipoVisitante.Goles += 3;
+                    EquipoVisitante.Asistencias += 3;
                     resultado = "0 - 3";
                 }
                 else
                 {
                     EquipoLocal.Goles += 3;
+                    EquipoLocal.Asistencias += 3;
                     resultado = "3 - 0";
                 }
             }
             
             return resultado;
+        }
+
+        public int GolesLocal(){
+            return EquipoLocal.Goles;
         }
         #endregion Methods
 

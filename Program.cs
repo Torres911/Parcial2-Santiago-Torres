@@ -11,12 +11,12 @@ namespace linq
     {
         static void Main(string[] args)
         {
-            GestorArchivos ga = new GestorArchivos();
-            List<Seleccion> Selecciones = ga.CargarDeFREDDY();
-            Seleccion Francia = Selecciones.First(s => s.Nombre == "Francia") as Seleccion;
-            Seleccion USA = Selecciones.FirstOrDefault(s => s.Nombre == "USA") as Seleccion;
-            Partido partido1 = new Partido(Francia, USA);
-            Console.WriteLine(partido1.Resultado());
+            //GestorArchivos ga = new GestorArchivos();
+            //List<Seleccion> Selecciones = ga.CargarDeFREDDY();
+            //Seleccion Francia = Selecciones.First(s => s.Nombre == "Francia") as Seleccion;
+            //Seleccion USA = Selecciones.FirstOrDefault(s => s.Nombre == "USA") as Seleccion;
+            //Partido partido1 = new Partido(Francia, USA);
+            //Console.WriteLine(partido1.Resultado());
 
 
             // var seleccionSerializada = JsonConvert.SerializeObject(Francia);
