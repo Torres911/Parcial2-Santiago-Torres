@@ -31,7 +31,10 @@ namespace linq.Torneo{
                 Seleccion elocal = selecciones.First(s => s.Nombre == local) as Seleccion;
                 Seleccion evisitante = selecciones.First(s => s.Nombre == visitante) as Seleccion;
                 partido = new Partido(elocal, evisitante);
-                partido.EquipoLocal.Goles;
+                elocal.GolesTotales += partido.GolesLocal();
+                elocal.AsistenciasTotales += partido.GolesLocal();
+                evisitante.GolesTotales += partido.GolesVisitante();
+                evisitante.AsistenciasTotales += partido.GolesVisitante();
                 Console.WriteLine("El partido quedo: " + local +" "+ partido.Resultado() +" "+ visitante);
             }
             catch (InvalidOperationException){

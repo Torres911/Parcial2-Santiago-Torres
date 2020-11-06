@@ -101,6 +101,9 @@ namespace linq.Torneo
         public int GolesLocal(){
             return EquipoLocal.Goles;
         }
+        public int GolesVisitante(){
+            return EquipoVisitante.Goles;
+        }
         #endregion Methods
 
     }
