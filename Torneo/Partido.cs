@@ -94,12 +94,14 @@ namespace linq.Torneo
                 {
                     EquipoVisitante.Goles += 3;
                     EquipoVisitante.Asistencias += 3;
+                    EquipoGanador = EquipoVisitante.Seleccion.Nombre;
                     resultado = "0 - 3";
                 }
                 else
                 {
                     EquipoLocal.Goles += 3;
                     EquipoLocal.Asistencias += 3;
+                    EquipoGanador = EquipoLocal.Seleccion.Nombre;
                     resultado = "3 - 0";
                 }
             }

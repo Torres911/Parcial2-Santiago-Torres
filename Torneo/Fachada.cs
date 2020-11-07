@@ -85,9 +85,9 @@ namespace linq.Torneo{
                     case 3:
                         Console.WriteLine("***************************************************************************");
                         String e1, e2;
-                        Console.WriteLine("Digite el nombre de la seleccion que desea poner de local")
+                        Console.WriteLine("Digite el nombre de la seleccion que desea poner de local");
                         e1 = Console.ReadLine();
-                        Console.WriteLine("Digite el nombre de la seleccion que desea poner de visitante")
+                        Console.WriteLine("Digite el nombre de la seleccion que desea poner de visitante");
                         e2 = Console.ReadLine();
                         crearPartido(e1,e2);
                         Console.WriteLine("***************************************************************************");
