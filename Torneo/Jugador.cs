@@ -27,7 +27,7 @@ namespace linq.Torneo
         public double Asistencias { get; set; }
 
         [JsonProperty("amarillas")]
-        public double Amarillas { get; set; }
+        public int Amarillas { get; set; }
 
         #endregion Properties
 
