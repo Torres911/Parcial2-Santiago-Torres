@@ -67,7 +67,7 @@ namespace linq.Torneo{
                 Console.WriteLine("3. Generar Partido.");
                 Console.WriteLine("4. Salir.");
                 Console.WriteLine("***************************************************************************");
-                Console.WriteLine("Digite la opcion que desea realizar dentro de la granja de robots:");
+                Console.WriteLine("Digite la opcion que desea realizar dentro del simulador:");
                 opc = int.Parse(Console.ReadLine());
                 Console.WriteLine("***************************************************************************");
 
